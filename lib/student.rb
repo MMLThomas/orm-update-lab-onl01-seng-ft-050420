@@ -47,5 +47,10 @@ class Student
     student.save
     student
   end
+  
+  def self.new_from_db(name, grade)
+    sql = <<-SQL
+    SELECT FROM 
+  end
 
 end
