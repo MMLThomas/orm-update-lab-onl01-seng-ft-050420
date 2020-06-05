@@ -62,6 +62,9 @@ class Student
     new_from_db(row)
   end
   
+  def update
+    sql = <<-SQL
+      UPDATE students 
   
     
     
