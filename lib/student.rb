@@ -35,7 +35,7 @@ class Student
      SQL
     
     DB[:conn].execute(sql, self.name, self.grade)
-    @id = fro
+    @id = SELECT FROM students last_
       
     
   end
