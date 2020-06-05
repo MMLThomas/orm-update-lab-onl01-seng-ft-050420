@@ -57,7 +57,6 @@ class Student
     sql = <<-SQL
     SELECT * FROM students
     WHERE name = ?
-    LIMIT 1
     SQL
     row = DB[:conn].execute(sql,name)[0]
     new_from_db(row)
