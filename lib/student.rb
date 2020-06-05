@@ -43,6 +43,7 @@ class Student
     student.name = name
     student.grade = grade
     save
+    student
   end
 
 end
