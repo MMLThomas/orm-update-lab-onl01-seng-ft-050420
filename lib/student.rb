@@ -59,9 +59,7 @@ class Student
     WHERE name = ?
     LIMIT 1
     SQL
-    DB[:conn].execute(sql,name).each do |row|
-      new_from_db(row)
-    end.first
+    DB[:conn].execute(sql,name)[0]
   end
     
     
